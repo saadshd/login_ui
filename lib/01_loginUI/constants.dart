@@ -28,3 +28,10 @@ const kmd1 = TextStyle(
   fontFamily: 'Rubik Medium',
   color: korange,
 );
+
+const kmd2 = TextStyle(
+  fontSize: 16,
+  fontFamily: 'Rubik Regular',
+  color: klight,
+  decoration: TextDecoration.underline,
+);
