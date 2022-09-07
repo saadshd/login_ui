@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_ui/01_loginUI/constants.dart';
+import 'package:login_ui/01_loginUI/signup.dart';
 
 class LoginUI extends StatefulWidget {
   const LoginUI({Key? key}) : super(key: key);
@@ -68,6 +69,19 @@ class _LoginUIState extends State<LoginUI> {
                     ),
                   ),
 
+                  const SizedBox(height: 10,),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: [
+                      TextButton(
+                        onPressed: () { },
+                        child: const Text('Forgot Password?',
+                          style: kmd2,
+                          ),
+                      ),
+                    ],
+                  )
+
                 ],
               ),
             ),
@@ -76,19 +90,26 @@ class _LoginUIState extends State<LoginUI> {
               onPressed: () {},
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical:  10,horizontal: 100),
-                backgroundColor: Colors.deepOrange,
-                foregroundColor: Colors.white
+                foregroundColor: korange
               ),
               child: const Text('Login'),
             ),
             const SizedBox(height: 15,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                Text("Don't have an account?",
+              children: [
+                const Text("Don't have an account?",
                   style: kmd,),
-                Text(' Sign Up',
-                  style: kmd1,),
+                TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const SignUp()),
+                      );
+                    },
+                    child: const Text('Sign Up',
+                    style: kmd1,),
+                ),
               ],
             ),
           ],
