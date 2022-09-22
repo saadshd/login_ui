@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_ui/01_loginUI/login.dart';
+import 'package:login_ui/02_loginUI/login.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +19,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         primarySwatch: Colors.indigo,
       ),
-      home: const LoginUI(),
+      home:
+      // const LoginUI()
+      const ManagerLogin()
     );
   }
 }
