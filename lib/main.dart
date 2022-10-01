@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_ui/01_loginUI/login.dart';
 import 'package:login_ui/02_loginUI/login.dart';
+import 'package:login_ui/homescreen.dart';
 
 
 void main() {
@@ -19,11 +20,17 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         primarySwatch: Colors.indigo,
       ),
-      home:
-      // const LoginUI()
-      const ManagerLogin()
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomeScreen(),
+        '/second': (context) => const LoginUI(),
+        '/third': (context) => const ManagerLogin(),
+      },
     );
   }
 }
+
+
+
 
 
