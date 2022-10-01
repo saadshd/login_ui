@@ -14,8 +14,8 @@ class _ManagerLoginState extends State<ManagerLogin> {
 
   final _formKey = GlobalKey<FormState>();
 
-  TextEditingController _nameController = TextEditingController();
-  TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _nameController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
 
 
   @override
