@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:login_ui/01_loginUI/login.dart';
 import 'package:login_ui/02_loginUI/login.dart';
+import 'package:login_ui/03_loginUI/login.dart';
 import 'package:login_ui/homescreen.dart';
 
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Login/Signup UI',
       theme: ThemeData(
         useMaterial3: true,
         primarySwatch: Colors.indigo,
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         '/': (context) => const HomeScreen(),
         '/01': (context) => const LoginUI(),
         '/02': (context) => const ManagerLogin(),
+        '/03': (context) => const LoginThree(),
       },
     );
   }

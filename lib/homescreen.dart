@@ -18,6 +18,7 @@ class _HomeScreenState extends State<HomeScreen> {
         children: [
           MyListTile(title: 'UI 1', onTap: () {Navigator.pushNamed(context, '/01');}),
           MyListTile(title: 'UI 2', onTap: () {Navigator.pushNamed(context, '/02');}),
+          MyListTile(title: 'UI 3', onTap: () {Navigator.pushNamed(context, '/03');}),
         ],
       ),
     );
