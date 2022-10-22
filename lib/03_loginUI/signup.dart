@@ -114,6 +114,24 @@ class _SignupThreeState extends State<SignupThree> {
                         ),
                         child: const Text('Signup'),
                       ),
+                      const SizedBox(height: 15,),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text("Already have an account",
+                            style: kmd,),
+                          TextButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => const LoginThree()),
+                              );
+                            },
+                            child: const Text('Log In',
+                              style: kmd1,),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
